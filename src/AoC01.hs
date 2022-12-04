@@ -19,7 +19,7 @@ solve1 = maximum . totalCalories
 
 
 solve2 :: (Ord a) => (Num a) => [[a]] -> a
-solve2 xs = sum (take 3 (sortBy (flip compare) (totalCalories xs)))
+solve2 = sum . take 3 . sortBy (flip compare) . totalCalories
 
 dummyInput :: [[Int]]
 dummyInput = [[2,1,3], [4,4], [1,2,1]]
