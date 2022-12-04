@@ -5,6 +5,7 @@ import qualified Data.Set as Set
 import Data.List.Split(chunksOf) 
 import Data.Maybe(fromJust)
 
+
 dummyInput = 
   [ "vJrwpWtwJgWrhcsFMMfFFhFp"
   , "jqHRNqRjqzjGDLGLrsFMfFZSrLrFZsSL"

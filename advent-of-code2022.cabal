@@ -31,6 +31,7 @@ common shared
     other-modules:    AoC01
                     , AoC02
                     , AoC03
+                    , AoC04
 
     -- LANGUAGE extensions used by modules in this package.
     -- other-extensions:
