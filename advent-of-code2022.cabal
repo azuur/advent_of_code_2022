@@ -30,6 +30,7 @@ common shared
     -- other-modules:
     other-modules:    AoC01
                     , AoC02
+                    , AoC03
 
     -- LANGUAGE extensions used by modules in this package.
     -- other-extensions:

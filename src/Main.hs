@@ -2,6 +2,7 @@ module Main where
 
 import qualified AoC01
 import qualified AoC02
+import qualified AoC03
 
 
 --solutions :: [IO ()]
@@ -14,8 +15,10 @@ main = do
   putStrLn "Hello, Haskell!"
 --  putStrLn "Day 1"
 --  AoC01.main --Adv01.main
-  putStrLn "Day 2"
-  AoC02.main
+--  putStrLn "Day 2"
+--  AoC02.main
+  putStrLn "Day 3"
+  AoC03.main
   
 
 --module Main where
