@@ -31,7 +31,7 @@ readInput :: IO [String]
 readInput = readFile "input/09" <&> lines <&> concatMap interpretLine
 
 interpretLine :: String -> [String]
-interpretLine line = take n (repeat m) where
+interpretLine line = replicate n m where
   instruction = splitOn " " line
   n = (read :: String -> Int) . last $ instruction
   m = head instruction
@@ -51,7 +51,7 @@ relativePosition :: (Int, Int) -> (Int, Int) -> (Int, Int)
 relativePosition (xH, yH) (xT, yT) = (xT - xH, yT - yH)
 
 delta :: Int -> Int
-delta x = x - (signum x) * (abs x + 1)
+delta x = x - signum x * (abs x + 1)
 
 moveT :: (Int, Int) -> (Int, Int) -> (Int, Int)
 moveT (xH, yH) (xT, yT)
@@ -79,7 +79,7 @@ solve2 :: [String] -> Int
 solve2 lines = length . unique $ tailLocations where
   tailLocations = (0, 0) : map (!! 9) trajectories
   trajectories = scanl move2 initialPos lines
-  initialPos = take 10 (repeat (0, 0))
+  initialPos = replicate 10 (0, 0)
 
 main = do
   print . solve1 . concatMap interpretLine $ dummyInput
