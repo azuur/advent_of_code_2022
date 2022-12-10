@@ -36,6 +36,7 @@ common shared
                     , AoC06
                     , AoC07
                     , AoC08
+                    , AoC09
 
     -- LANGUAGE extensions used by modules in this package.
     -- other-extensions:
