@@ -6,6 +6,8 @@ import qualified AoC03
 import qualified AoC04
 import qualified AoC05
 import qualified AoC06
+import qualified AoC07
+import qualified AoC08
 
 
 --solutions :: [IO ()]
@@ -26,8 +28,12 @@ main = do
 --  AoC04.main
 --  putStrLn "Day 5"
 --  AoC05.main
-  putStrLn "Day 6"
-  AoC06.main
+--  putStrLn "Day 6"
+--  AoC06.main
+--  putStrLn "Day 7"
+--  AoC07.main
+  putStrLn "Day 8"
+  AoC08.main
   
 
 --module Main where

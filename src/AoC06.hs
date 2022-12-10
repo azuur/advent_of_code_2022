@@ -28,7 +28,6 @@ packetConditions = noRepeatsConditions 4
 messageConditions :: String -> [Bool]
 messageConditions = noRepeatsConditions 14
 
-
 argMaxes :: Ord a => [a] -> [Int]
 argMaxes [] = []
 argMaxes xs = filter ((== maximum xs) . (!!) xs) [0..(length xs - 1)]
